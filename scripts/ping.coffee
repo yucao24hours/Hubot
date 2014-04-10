@@ -24,5 +24,5 @@ module.exports = (robot) ->
     msg.send "Goodbye, cruel world."
     process.exit 0
 
-  robot.respond /Love!$/i, (msg) ->
+  robot.respond /Love(?:.*)$/i, (msg) ->
     msg.send "Me too, #{msg.message.user.name}!"
